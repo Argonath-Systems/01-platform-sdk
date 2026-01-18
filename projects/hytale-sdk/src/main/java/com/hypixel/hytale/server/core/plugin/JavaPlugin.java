@@ -6,6 +6,12 @@ import org.slf4j.LoggerFactory;
 public abstract class JavaPlugin {
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
+    public JavaPlugin(JavaPluginInit init) {
+    }
+
+    public JavaPlugin() {
+    }
+
     public void onEnable() {
     }
 
