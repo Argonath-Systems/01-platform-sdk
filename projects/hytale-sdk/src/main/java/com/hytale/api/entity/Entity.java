@@ -1,7 +1,7 @@
 package com.hytale.api.entity;
 
 import java.util.UUID;
-import com.hytale.api.World;
+import com.hytale.api.world.World;
 import com.hytale.api.Location;
 
 public interface Entity {
