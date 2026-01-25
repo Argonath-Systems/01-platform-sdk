@@ -172,7 +172,7 @@ Zero Hytale imports above the adapter layer!
 
 ## 🏷️ Tags
 
-`platform-sdk` `api` `interfaces` `abstraction-layer` `platform-agnostic` `entity-system` `event-system` `zero-imports` `hytale` `lord-of-the-tales`
+`platform-sdk` `api` `interfaces` `abstraction-layer` `platform-agnostic` `entity-system` `event-system` `zero-imports` `hytale` `argonath`
 
 ## 🔗 Dependencies
 
