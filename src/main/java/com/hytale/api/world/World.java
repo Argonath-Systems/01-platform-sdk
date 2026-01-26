@@ -2,6 +2,7 @@ package com.hytale.api.world;
 
 import com.hytale.api.Location;
 import com.hytale.api.block.Block;
+import com.hytale.api.block.BlockType;
 import com.hytale.api.entity.Player;
 import com.hytale.api.entity.Entity;
 import com.hytale.api.entity.Hologram;
@@ -21,6 +22,7 @@ public interface World {
     boolean isRaining();
     boolean isThundering();
     Block getBlockAt(int x, int y, int z);
+    void setBlock(int x, int y, int z, BlockType type);
     Location getSpawnLocation();
     Difficulty getDifficulty();
 }
