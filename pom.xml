@@ -4,12 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.hypixel.hytale</groupId>
-    <artifactId>HytaleServer-parent</artifactId>
+    <groupId>com.argonathsystems.test</groupId>
+    <artifactId>hytale-sdk-mock</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Hytale Server API Stub</name>
+    <name>Hytale Server API Mock (Test Only)</name>
+    <description>Mock SDK for testing - DO NOT USE IN PRODUCTION. Use official Hytale SDK instead.</description>
 
     <properties>
         <maven.compiler.source>25</maven.compiler.source>
