@@ -1,18 +1,17 @@
 package com.hypixel.hytale.server.core;
 
-import com.hytale.api.Server;
-import com.hytale.api.Logger;
-import com.hytale.api.event.EventBus;
-import com.hytale.api.scheduler.Scheduler;
-import com.hytale.api.world.World;
-import com.hytale.api.inventory.ItemStack;
-import com.hytale.api.registry.ItemRegistry;
-import com.hytale.api.data.DataStorage;
-import java.util.Collection;
-import java.util.Collections;
-
-public class HytaleServer implements Server {
+/**
+ * Mock Hytale Server singleton for testing purposes.
+ * This is a minimal stub implementation used for compilation and testing.
+ * 
+ * DO NOT USE IN PRODUCTION - This is a placeholder for the official Hytale SDK.
+ */
+public class HytaleServer {
     private static HytaleServer instance;
+
+    private HytaleServer() {
+        // Private constructor for singleton
+    }
 
     public static HytaleServer get() {
         if (instance == null) {
@@ -21,22 +20,11 @@ public class HytaleServer implements Server {
         return instance;
     }
 
-    @Override
-    public Logger getLogger() { return null; }
-    @Override
-    public EventBus getEventBus() { return null; }
-    @Override
-    public Scheduler getScheduler() { return null; }
-    @Override
-    public World getWorld(String name) { return null; }
-    @Override
-    public World getDefaultWorld() { return null; }
-    @Override
-    public Collection<World> getWorlds() { return Collections.emptyList(); }
-    @Override
-    public ItemStack createItemStack(String type, int amount) { return null; }
-    @Override
-    public ItemRegistry getItemRegistry() { return null; }
-    @Override
-    public DataStorage getDataStorage() { return null; }
+    /**
+     * Mock implementation - always returns null.
+     * Replace with official SDK implementation when available.
+     */
+    public Object getLogger() { 
+        return null; 
+    }
 }
