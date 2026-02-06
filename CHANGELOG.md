@@ -11,15 +11,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial project structure
 - Core functionality implementation
 
-### Changed
+### Changed - Real Hytale API Alignment (2026-02-05)
 
-### Deprecated
+- **BuilderCodec**: Rewrote with `builder(Class<T>, Supplier<T>)` static factory, `Builder<T>` inner class with `append()`, `addField()`, `afterDecode()`, `versioned()`, `documentation()`, and `build()` methods
+- **KeyedCodec**: Changed from `<T, V>` to single `<FieldType>` type parameter matching real API; added `of()` static factory method
+- **Codec**: Replaced `UUID` constant with `UUID_BINARY` (`UUIDBinaryCodec`) and `UUID_STRING` (`FunctionCodec<String, UUID>`) matching real API field names
 
-### Removed
+### Removed - Real Hytale API Alignment (2026-02-05)
+
+- **`server.plugin.component` package**: Deleted `Component.java` and `ComponentType.java` — these were fabricated and don't exist in the real Hytale API. Real types live in `com.hypixel.hytale.component.*`
+- **`server.plugin.EntityStoreRegistry`**: Deleted — doesn't exist in real API. Use `ComponentRegistryProxy` instead
+- **`BuilderCodec.create()`**: Removed incorrect static factory; real API uses `BuilderCodec.builder(Class, Supplier)`
 
 ### Fixed
-
-### Security
 
 ## [1.0.0] - 2026-01-25
 
